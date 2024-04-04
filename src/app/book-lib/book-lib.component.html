@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Project</title>
+</head>
+<body>
+    <h2 class="head">Books in the Library</h2>
+    <div *ngIf="books.length > 0">
+        <ul class="booklist">
+          <li class="book" *ngFor="let book of books">
+            <div>
+              <h3 class="Bname">{{ book.name }}</h3>
+              <p><strong>Author:</strong> {{ book.author }}</p>
+              <p><strong>Quantity:</strong> {{ book.quantity }}</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="error" *ngIf="books.length === 0">
+        <p>No books in the library.</p>
+    </div>
+</body>
+</html>

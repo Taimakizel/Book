@@ -1,0 +1,58 @@
+
+.welcomeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+}
+.h1{
+    font-family:cooper ;
+    font-weight: bolder;
+    font-size: 40px;  
+}
+.p1{
+    font-size:25px;
+}
+.span1{
+    font-family:cooper ;
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+.facebook,.braude,.instagram{
+    width: 50px;
+    height: 50px;
+    
+}
+.phone,.gmail,.fax,.whatsApp{
+    width: 18px;
+    height: 18px;
+    
+}
+.contact-info{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.contact_us{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:cooper ;
+}
+
+.contact-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    
+}
+.images{
+    width: 1000px;
+    height: auto;
+}

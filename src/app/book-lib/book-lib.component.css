@@ -1,0 +1,42 @@
+.head{
+    font-family: cooper;
+    font-size: 35px;
+    animation-name: example;
+    animation-duration:4s;
+    color: black;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0%   {color: #a7ab94;}
+    25%  {color: #8d907e;}
+    50%  {color: #6e7161;}
+    100% {color: #43453b;}
+  }
+  .book{
+    border: black 3px solid;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: auto;
+    width: 400px;
+    padding: 8px;
+    margin: 4px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+  }
+  .booklist {
+    list-style-type:square;
+}
+.error{
+  font-size: 20px;
+  font-family: cooper;
+} 
+.Bname{
+  font-size: 22px;
+  font-family: cooper;
+  color:#7a8063; ;
+}   

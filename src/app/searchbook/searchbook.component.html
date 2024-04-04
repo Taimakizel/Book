@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books out of the library</title>
+</head>
+<body>
+    <h2 class="head">Books out of the library</h2>
+    <p class="HS">Search for books outside the library:</p>
+    <form (submit)="searchBooks()">
+        <input class="Sinput" type="text" [(ngModel)]="searchQuery" name="searchQuery" placeholder="Enter book title...">
+        <button type="submit" class="Search">🔍</button>
+    </form>
+    <h3 class="H">Search Results:</h3>
+    <div *ngIf="booksOut.length > 0">
+        <ul>
+          <li class="books" *ngFor="let book of booksOut">
+            <p class="Bname">{{ book.volumeInfo.title }}<br></p>
+            <p><span class="Aname">Author :</span>  {{book.volumeInfo.authors}}<br></p>
+            {{book.volumeInfo.publishedDate}}<br>
+            {{book.volumeInfo.description}}
+          </li>
+        </ul>
+      </div>
+      <div class="error" *ngIf="booksOut.length === 0">
+        <p>No results found.</p>
+      </div>
+</body>
+</html>
+

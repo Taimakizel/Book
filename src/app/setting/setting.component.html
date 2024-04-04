@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+</head>
+<body> 
+    <h2>Settings</h2>
+    <hr>
+    <label for="newManager">Add Manager:</label>
+    <input required pattern="[A-Za-z]+\s[A-Za-z]+" name="managerInput" type="text" id="newManager" [(ngModel)]="newManagerValue" #managerInput="ngModel">
+    <button (click)="addManager(managerInput.value)"  [disabled]="managerInput.invalid" >Add</button>
+    <p *ngIf="managerInput.invalid && managerInput.touched && managerInput.value" style="color: red;">Name can not be empty</p>
+    <p *ngIf="managers.length>2" ></p>
+    <ul>
+        <li *ngFor="let manager of managers">{{ manager }}</li>
+    </ul>
+</body>
+</html>

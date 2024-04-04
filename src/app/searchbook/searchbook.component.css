@@ -1,0 +1,58 @@
+.books{
+    border: solid black 3px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 8px;
+    width: 800px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#f8faf0;
+    color: black;
+}
+.head{
+    font-family: cooper;
+    font-size: 35px;
+    animation-name: example;
+    animation-duration:4s;
+    color: black;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes example {
+    0%   {color: #a7ab94;}
+    25%  {color: #8d907e;}
+    50%  {color: #6e7161;}
+    100% {color: #43453b;}
+  }
+  .error,.H,.HS{
+    font-size: 20px;
+    font-family: cooper;
+  }
+  .Bname,.Aname{
+    font-size: 22px;
+    font-family: cooper;
+    color:#7a8063; ;
+  }
+  .Aname{
+    font-size: 20px;
+    font-family: cooper;
+    color:#43453b; ;
+  }
+  .Search{
+    border: none;
+    background-color:white;
+    margin-left: -40px;
+    
+}
+
+.Sinput{
+    width:400px;
+    height: 30px;
+    border:black solid 2px;
+    border-radius: 10px;
+}
+
+

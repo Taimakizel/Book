@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cooper;
+    background-image: url('https://www.jerusalem.muni.il/media/8889/library-events-9-g.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+ 
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    border:solid 2px black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    color: black;
+    background-color: #f5f5f1;
+}
+input{
+    width: 210px;
+    height: 23px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#bookImage{
+    border: #f5f5f1 ;
+}
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 2px black;
+    margin-left: 160px;
+    background-color:white;
+    
+}
+button:hover:enabled{
+    background-color: #d7d9cc
+}

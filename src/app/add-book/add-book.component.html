@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+</head>
+<body>
+        <form class="form" (ngSubmit)="add(formBody)" #formBody="ngForm">
+            <h1>Book Details</h1><br>
+            <label>Book Name:</label>
+            <input name="name" #name="ngModel" ngModel type="text" placeholder="Enter your full name" required >
+            <br>
+            <label>Author:</label>
+            <input #Author="ngModel" name="Author" pattern="[A-Za-z]+\s[A-Za-z]+"  ngModel type="text" placeholder="Enter Author Full Name">
+            <p *ngIf="Author.invalid && Author.touched" [ngStyle]="{'color':'red'}">Name can not be empty</p>
+            <br>
+            <label>Quantity:</label>
+            <input #Quantity="ngModel" name="Quantity" ngModel type="number" placeholder="Enter the Quantity you have to add" required pattern="[0-9]*" >
+            <p *ngIf="Quantity.invalid && Quantity.touched ||(Quantity.value < 0)" [ngStyle]="{'color':'red'}">Invalid Quantity</p>
+            <br>
+            <label>Upload Image:</label>
+            <input #file="ngModel" type="file"   ngModel name="bookImage" id="bookImage" required>
+            <p *ngIf="file.invalid &&file.touched" [ngStyle]="{'color':'red'}">There is no file !!</p>
+            <br>
+            <button  type="submit"  [disabled]="!formBody.valid">Add Book</button>
+        </form>
+</body>
+</html>

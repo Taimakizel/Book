@@ -1,0 +1,8 @@
+.dark-mode {
+    background-color: #181717;
+    color: #ffffff;
+}
+  
+input[type="checkbox"] {
+    margin-right: 10px;
+}

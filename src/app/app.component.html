@@ -1,0 +1,5 @@
+<div class="app-container" [ngClass]="{ 'dark-mode': darkMode }">
+<app-menu></app-menu>
+<input type="checkbox" [(ngModel)]="darkMode"> Dark Mode
+<router-outlet></router-outlet>
+</div>
