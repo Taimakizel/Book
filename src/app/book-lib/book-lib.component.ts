@@ -13,7 +13,7 @@ export class BookLibComponent {
 
   }
 
-  ngOnInit() {
+  ngOnInit=() =>{
     this.books = this.serviceService.books;
   }
 

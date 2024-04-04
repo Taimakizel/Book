@@ -12,7 +12,7 @@
             <input name="name" #name="ngModel" ngModel type="text" placeholder="Enter your full name" required >
             <br>
             <label>Author:</label>
-            <input #Author="ngModel" name="Author" pattern="[A-Za-z]+\s[A-Za-z]+"  ngModel type="text" placeholder="Enter Author Full Name">
+            <input #Author="ngModel" name="Author" pattern="[A-Za-z]+\s[A-Za-z]+"  ngModel type="text" placeholder="Enter Author Full Name" required>
             <p *ngIf="Author.invalid && Author.touched" [ngStyle]="{'color':'red'}">Name can not be empty</p>
             <br>
             <label>Quantity:</label>

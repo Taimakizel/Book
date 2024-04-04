@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ServiceService {
   books: any[] = [];
-  addBook(formBody: NgForm) {
+  addBook=(formBody: NgForm)=> {
     alert("The Book Added Successfuly")
     if (formBody.valid) {
       let newBook = {

@@ -6,15 +6,20 @@
     <title>My Project</title>
 </head>
 <body> 
-    <h2>Settings</h2>
+    <h2 class="head">Settings</h2>
     <hr>
-    <label for="newManager">Add Manager:</label>
-    <input required pattern="[A-Za-z]+\s[A-Za-z]+" name="managerInput" type="text" id="newManager" [(ngModel)]="newManagerValue" #managerInput="ngModel">
-    <button (click)="addManager(managerInput.value)"  [disabled]="managerInput.invalid" >Add</button>
-    <p *ngIf="managerInput.invalid && managerInput.touched && managerInput.value" style="color: red;">Name can not be empty</p>
-    <p *ngIf="managers.length>2" ></p>
+<div class="center">
+    <div class="manager">
+    <label for="newManager" class="Add">Add Manager</label>
+    <br>
+    <input required pattern="[A-Za-z]+\s[A-Za-z]+" name="managerInput" type="text" id="newManager" [(ngModel)]="newManagerValue" #managerInput="ngModel"><br>
     <ul>
         <li *ngFor="let manager of managers">{{ manager }}</li>
     </ul>
+    <button (click)="addManager(managerInput.value)"  [disabled]="managerInput.invalid" >Add</button>
+    <p *ngIf="managerInput.invalid && managerInput.touched && managerInput.value" style="color: red;">Name can not be empty</p>
+    <p *ngIf="managers.length>2" ></p>
+    </div>
+</div>
 </body>
 </html>
