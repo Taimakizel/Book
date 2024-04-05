@@ -10,8 +10,7 @@ import { ServiceService } from '../service.service';
 export class AddBookComponent {
   
   constructor(private serviceService: ServiceService) { }
-
-  add=(formBody: any)=> {
+  add = (formBody: any) => {
     this.serviceService.addBook(formBody);
   }
 

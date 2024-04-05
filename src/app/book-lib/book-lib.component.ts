@@ -8,13 +8,8 @@ import { ServiceService } from '../service.service';
 })
 export class BookLibComponent {
   books: any[] = [];
-
-  constructor(private serviceService: ServiceService) { 
-
-  }
-
-  ngOnInit=() =>{
+  constructor(private serviceService: ServiceService) { }
+  ngOnInit() {
     this.books = this.serviceService.books;
   }
-
 }
