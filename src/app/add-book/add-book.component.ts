@@ -11,7 +11,7 @@ export class AddBookComponent {
   
   constructor(private serviceService: ServiceService) { }
 
-  add=(formBody: any)=> {
+  add=(formBody: NgForm)=> {
     this.serviceService.addBook(formBody);
   }
 
