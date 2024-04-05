@@ -7,7 +7,7 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./book-lib.component.css']
 })
 export class BookLibComponent {
-  books: any[] = [];
+  books: {name:string,author:string,quantity:number}[] = [];
 
   constructor(private serviceService: ServiceService) { 
 
